@@ -5,4 +5,5 @@ def read_config(key):
     for line in health_prop_file:
         if key in line:
             keyval = line.rstrip().split("=")[1]
+    health_prop_file.close()
     return keyval
